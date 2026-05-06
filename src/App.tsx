@@ -514,16 +514,29 @@ export default function App() {
                 </div>
               </div>
 
-              <motion.a 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="https://maps.app.goo.gl/jf7Q7dc7DuF9wTF97" 
-                target="_blank" 
-                rel="noreferrer"
-                className="w-full max-w-xs inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-silver-bright text-celestial-dark font-serif-cinzel font-bold text-sm tracking-widest shadow-[0_0_20px_rgba(192,192,192,0.3)] hover:shadow-[0_0_30px_rgba(192,192,192,0.5)] transition-all"
-              >
-                VER UBICACIÓN <MapPin className="w-4 h-4" />
-              </motion.a>
+              <div className="flex flex-col w-full max-w-xs gap-4">
+                <motion.a 
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  href="https://wa.me/51916770853?text=Hola%20Keily%2C%20confirmo%20mi%20asistencia%20a%20tu%20fiesta%20de%2015%20a%C3%B1os.%20%C2%A1Muchas%20gracias%21" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-silver-bright text-celestial-dark font-serif-cinzel font-bold text-sm tracking-widest shadow-[0_0_20px_rgba(192,192,192,0.3)] hover:shadow-[0_0_30px_rgba(192,192,192,0.5)] transition-all"
+                >
+                  CONFIRMAR ASISTENCIA <Music className="w-4 h-4 ml-1" />
+                </motion.a>
+
+                <motion.a 
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  href="https://maps.app.goo.gl/jf7Q7dc7DuF9wTF97" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-celestial-glow border border-silver/30 text-silver-bright font-serif-cinzel font-bold text-sm tracking-widest hover:bg-silver/10 transition-all text-center"
+                >
+                  VER UBICACIÓN <MapPin className="w-4 h-4" />
+                </motion.a>
+              </div>
             </motion.div>
 
             {/* Side Info */}
