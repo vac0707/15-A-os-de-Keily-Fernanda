@@ -105,3 +105,30 @@
   background: #1a2a4a;
   border-radius: 10px;
 }
+
+@keyframes fall {
+  0% {
+    transform: translateY(-2vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--max-opacity, 0.6);
+  }
+  90% {
+    opacity: var(--max-opacity, 0.6);
+  }
+  100% {
+    transform: translateY(102vh) translateX(40px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.star-fall {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  animation: fall var(--duration, 12s) linear infinite;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+}
+
